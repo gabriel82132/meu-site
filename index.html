@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia dos Namorados</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <audio id="musica" src="sweet_child.mp3" loop></audio>
+    <div class="container">
+        <h1>Feliz Dia dos Namorados, Amor!</h1>
+        <p>Eu te amo muito, você é a pessoa mais importante para mim. Obrigado por me fazer sentir especial, realmente nunca me havia achado.</p>
+        <div class="foto-container">
+            <img id="foto" src="fotos/essa.jpeg" alt="Sua foto">
+        </div>
+        <button onclick="iniciarDesafio()" class="botao-entrar">Clique aqui para ver o formulário</button>
+        <button onclick="abrirVideo()" class="botao-video" style="display: none;">Clique aqui depois do formulário</button>
+        <div id="mensagem"></div>
+        <form id="formulario" style="display: none;">
+            <label id="pergunta"></label><br>
+            <input type="text" id="resposta" name="resposta"><br>
+            <button type="button" onclick="verificarResposta()">Responder</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
